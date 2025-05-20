@@ -1,0 +1,160 @@
+/* Background and Body Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #192048;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Navigation Buttons */
+.nav-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+.nav-buttons button {
+    background-color: #D14C8B;
+    color: #FAF9F6;
+    font-size: 16pt;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.nav-buttons button:hover {
+    opacity: 0.9;
+}
+
+/* Overlay Main Box */
+.overlay-box {
+    background-color: #2B1B3D;
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 40px 20px;
+    min-height: 90vh;
+    border-radius: 12px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    color: #FAF9F6;
+}
+
+/* Header with Logo and Title */
+.site-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.site-header .logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.site-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36pt;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Main Content Area */
+.main-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Video Frame Section */
+.video-frame {
+    position: relative;
+    width: 270px;
+    height: 480px;
+    flex-shrink: 0;
+}
+
+.frame-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.video-embed {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.video-embed iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Text Section */
+.text-block {
+    flex: 1;
+    min-width: 250px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 480px;
+    color: #FAF9F6;
+}
+
+.text-block h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24pt;
+    margin-bottom: 20px;
+}
+
+.text-block p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16pt;
+    line-height: 1.5;
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-block {
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .site-header h1 {
+        font-size: 28pt;
+    }
+
+    .nav-buttons {
+        position: static;
+        margin: 20px;
+        text-align: center;
+    }
+
+    .nav-buttons button {
+        margin: 5px;
+    }
+}
