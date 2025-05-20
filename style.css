@@ -194,15 +194,18 @@ body {
     flex: 1;
     max-width: 50%;
     color: #FAF9F6;
+    text-align: left;
 }
 
-/* Fix for mobile layout */
+/* On mobile: expand width + center text */
 @media (max-width: 768px) {
     .ig-text {
         max-width: 100%;
         padding: 0 20px;
+        text-align: center;
     }
 }
+
 
 
 .ig-text h2 {
