@@ -196,6 +196,15 @@ body {
     color: #FAF9F6;
 }
 
+/* Fix for mobile layout */
+@media (max-width: 768px) {
+    .ig-text {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
 .ig-text h2 {
     font-family: 'Playfair Display', serif;
     font-size: 24pt;
